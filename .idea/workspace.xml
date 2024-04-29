@@ -4,22 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c5f6ec0-e6ad-411a-abb3-51cd807588c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Lock/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Lock/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Lock/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/waitandnotify/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/waitandnotify/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/waitandnotify/Producer.java" afterDir="false" />
+    <list default="true" id="0c5f6ec0-e6ad-411a-abb3-51cd807588c4" name="Changes" comment="solved producer and consumer problem using Locks and with Wait and notifyAll.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Semaphores/Buffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Semaphores/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Semaphores/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Semaphores/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +39,13 @@
   "keyToString": {
     "Application.Client.executor": "Run",
     "Application.org.example.Lock.Client.executor": "Run",
+    "Application.org.example.Semaphores.Client.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Scaler -lld/MultiThreading-1/src/main/java/org/example/Lock",
+    "last_opened_file_path": "E:/Scaler -lld/MultiThreading-1/src/main/java/org/example/Semaphores",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,13 +56,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Scaler -lld\MultiThreading-1\src\main\java\org\example\Semaphores" />
       <recent name="E:\Scaler -lld\MultiThreading-1\src\main\java\org\example\Lock" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.waitandnotify" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.Lock.Client">
+  <component name="RunManager" selected="Application.org.example.Semaphores.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.waitandnotify.Client" />
       <module name="MultiThreading-1" />
@@ -98,8 +90,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.example.Semaphores.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Semaphores.Client" />
+      <module name="MultiThreading-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Semaphores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.Semaphores.Client" />
         <item itemvalue="Application.org.example.Lock.Client" />
         <item itemvalue="Application.Client" />
       </list>
@@ -122,11 +128,25 @@
       <updated>1714301097314</updated>
       <workItem from="1714301098533" duration="881000" />
       <workItem from="1714302207915" duration="6872000" />
+      <workItem from="1714408717103" duration="2051000" />
     </task>
+    <task id="LOCAL-00001" summary="solved producer and consumer problem using Locks and with Wait and notifyAll.">
+      <option name="closed" value="true" />
+      <created>1714408972467</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714408972467</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="solved producer and consumer problem using Locks and with Wait and notifyAll." />
+    <option name="LAST_COMMIT_MESSAGE" value="solved producer and consumer problem using Locks and with Wait and notifyAll." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,11 +160,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/waitandnotify/Producer.java</url>
           <line>16</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/waitandnotify/Consumer.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
